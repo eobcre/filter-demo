@@ -4,14 +4,6 @@
   box-sizing: border-box;
 }
 
-.filter-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 30px;
-}
-
 input {
   outline: none;
   margin: 30px;
@@ -20,4 +12,12 @@ input {
 li {
   list-style: none;
   padding: 4px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
 }
