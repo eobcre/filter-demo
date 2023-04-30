@@ -16,3 +16,7 @@ input {
   outline: none;
   margin: 30px;
 }
+
+li {
+  padding: 4px;
+}
