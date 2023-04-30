@@ -14,9 +14,11 @@ const App = () => {
       <h1>Filter Demo</h1>
       <input type='text' value={filterCharacter} onChange={handleChange} />
       <ul>
-        {characters.map((character) => (
-          <li key={character}>{character}</li>
-        ))}
+        {characters
+          .filter((character) => character.indexOf(filterCharacter) !== -1)
+          .map((character) => (
+            <li key={character}>{character}</li>
+          ))}
       </ul>
     </div>
   );
