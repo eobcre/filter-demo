@@ -5,10 +5,14 @@ const App = () => {
 
   const [filterCharacter, setFilterCharacter] = useState('');
 
+  const handleChange = (e) => {
+    setFilterCharacter(e.target.value);
+  };
+
   return (
     <div className='filter-container'>
       <h1>Filter Demo</h1>
-      <input type='text' />
+      <input type='text' value={filterCharacter} onChange={handleChange} />
       <ul>
         {characters.map((character) => (
           <li key={character}>{character}</li>
